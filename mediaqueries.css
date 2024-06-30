@@ -1,0 +1,185 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  .section__pic-container1 {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+}
+/* ************ */
+/* .section__pic-container1 {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__pic-container1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make the image circular */
+/* } */ 
+
+/* @media screen and (max-width: 600px) {
+  .section__pic-container1 {
+    width: 120px; /* Adjust width for mobile screens */
+    /* height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+/* } */ 
+
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 15px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  .details-container {
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .details-container {
+      flex: 0 0 100% !important;
+    }
+  }
+
+  /* .section__pic-container1 {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+    display: flex;
+    margin: 3px;
+    border-radius: 50%;
+    overflow: hidden;
+  } */
+
+  .section__pic-container1 {
+    width: 80vw; /* Adjust size as needed */
+    height: 80vw; /* Adjust size as needed */
+    max-width: 170px;
+    max-height: 170px;
+    /*max-width: 300px; /* Set a maximum width to prevent excessive size on larger screens */
+    /*max-height: 300px; /* Set a maximum height to prevent excessive size on larger screens */
+    margin: auto; /* Center horizontally */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image stays within the circular container */
+    background-color: #FFFDD0; /* Set background color to match the circle's color */
+  }
+
+  .section__pic-container1 img {
+    width: 100%; /* Ensures the image fills the circular container */
+    height: 100%; /* Ensures the image fills the circular container */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    border-radius: 50%; /* Makes the image itself circular */
+  }
+
+}
+
+
+
+
+

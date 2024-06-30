@@ -1,0 +1,584 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #3C1414; /* Dark Chocolate */
+  color: #FFFDD0; /* Cream */
+}
+
+  /* .section__pic-container1 {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0px solid #FFFDD0; /* Optional: adds a border to the circular image */
+  /* }   */
+
+  /* General styles */
+.section__pic-container1 {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  margin: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0px solid #FFFDD0; /* Optional: adds a border to the circular image */
+}
+
+.con{
+  color:black;
+}
+
+.con:hover{
+  color:black;
+}
+.exp-font{
+  color:black;
+}
+
+/* Make sure the container for the profile section uses flexbox */
+#profile {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+}
+
+/* Ensure the text container is flexed correctly */
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center text horizontally */
+  justify-content: center; /* Center text vertically */
+  text-align: center; /* Center the text itself */
+  margin-left: 20px; /* Adjust spacing as needed */
+}
+
+ /* CSS */
+
+
+/* .img{
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0px solid #FFFDD0; 
+} */
+/* .section__pic-container1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+ /* } */
+/* CSS */
+/* CSS */
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: black; /* Cream */
+}
+h3{
+  color:black;
+}
+
+/* TRANSITION */
+
+#about .section__text__p1 {
+  margin-top: -20px; /* Adjust the value as needed */
+}
+
+#about .title {
+  margin-top: -10px; /* Adjust the value as needed */
+}
+
+.section-container {
+  padding-top: 70px; /* Add padding to create space below the text */
+}
+
+#about {
+  padding-bottom: 40px; /* Add space below the about section */
+}
+
+#experience {
+  margin-top: 40px; /* Move the experience section downwards */
+}
+
+#experience .section__text__p1 {
+  margin-top: 30px; /* Adjust this value as needed */
+}
+
+#experience .title {
+  margin-top: -2px; /* Adjust this value as needed */
+}
+
+.experience-details-container {
+  margin-top: 20px; /* Add space above the experience details container */
+}
+
+.details-container {
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.article-container {
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.project-link {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  height: 100%;
+}
+
+.project-link img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+  .project-link img {
+    width: 85%; /* Adjust width for laptops */
+  }
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+  color: #FFFDD0; /* Cream */
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #FFFDD0; /* Cream */
+  text-decoration: none;
+  text-decoration-color: #FFFDD0; /* Cream */
+}
+
+a:hover {
+  color: #FFFDD0; /* Cream */
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #FFFDD0; /* Cream */
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #FFFDD0; /* Cream */
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #3C1414; /* Dark Chocolate */
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FFFDD0; /* Cream */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+
+.section__text {
+  margin-top: 25px;
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  color: #FFFDD0;
+  font-weight: 400;
+}
+
+.section__text__p1 {
+  color:#FFFDD0;
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  color: #FFFDD0; /* Cream */
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: #FFFDD0 0.1rem solid; /* Cream border */
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: #FFFDD0; /* Cream */
+  color: #3C1414; /* Dark Chocolate text */
+}
+
+.btn-color-1:hover {
+  background: #3C1414; /* Dark Chocolate */
+  color: #FFFDD0; /* Cream text */
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: #FFFDD0 0.1rem solid; /* Cream border */
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 32px;
+  flex: 1;
+  background: #FFFDD0; /* Cream background */
+  border-radius: 2rem;
+  border: #FFFDD0 0.1rem solid; /* Cream border */
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  /* color: #FFFDD0; Cream */
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  margin: -16px;
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: #FFFDD0; /* Cream */
+}
+
+.project-img {
+  border-radius: 2rem;
+  margin-top: 20px;
+  width: 68%;
+  height: 90%;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.project-title {
+  margin: -16px;
+  color: black /* Cream */
+}
+
+.project-btn {
+  margin: -15px;
+  
+}
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+ 
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color:#FFFDD0;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+ 
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  margin-left:5px;
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  color:#FFFDD0;
+  text-align: center;
+}

@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #43464b; /* Dark Chocolate */
+  background-color: #262626; /* Dark Chocolate */
   color: white; /* Cream */
 }
 
@@ -236,7 +236,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #43464b; /* Dark Chocolate */
+  background-color: #1E1E1E; /* Dark Chocolate */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -386,11 +386,11 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
   background: white; /* Cream */
-  color: #43464b; /* Dark Chocolate text */
+  color: #262626; /* Dark Chocolate text */
 }
 
 .btn-color-1:hover {
-  background: #43464b; /* Dark Chocolate */
+  background: #262626; /* Dark Chocolate */
   color: white; /* Cream text */
 }
 

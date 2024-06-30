@@ -167,7 +167,7 @@
     margin: auto; /* Center horizontally */
     border-radius: 50%; /* Makes the container circular */
     overflow: hidden; /* Ensures the image stays within the circular container */
-    background-color: #FFFDD0; /* Set background color to match the circle's color */
+    background-color: white; /* Set background color to match the circle's color */
   }
 
   .section__pic-container1 img {
